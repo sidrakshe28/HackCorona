@@ -1,0 +1,144 @@
+body {
+    background-color: rgb(0, 0, 0) !important;
+    overflow-x: hidden;
+    width: 100%;
+    /* give any color you want */
+  }
+  
+  /* ============================================= */
+  /* ====================NAV==================== */
+  /* ============================================= */
+  #myNavStyle {
+    margin: 6px auto;
+    animation: head 2s 0s 1;
+  }
+  #brand {
+    padding-top: 20px;
+    margin-bottom: 15px;
+  }
+  #myNavStyle h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 8px auto;
+    font-family: "Sen", sans-serif;
+  }
+  #brandUnderline {
+    display: absolute;
+    width: 190px;
+    margin: auto;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+  }
+  #styleLi {
+    display: flex;
+    margin-top: 4px;
+    justify-content: space-around;
+  }
+  #styleLi li {
+    background-color: rgb(66, 66, 66);
+    border-radius: 3px;
+    margin: 4px 2px 8px 2px;
+  }
+  #styleLi li :hover {
+    background-color: #ff004d;
+  }
+  #styleLi li a {
+    color: white;
+    text-align: center;
+  }
+  @media (min-width: 990px) {
+    #styleLi li a {
+      padding: 6px 80px;
+    }
+  }
+  
+  /* ============================================= */
+  /* ====================TABLE==================== */
+  /* ============================================= */
+  
+  .giveColor,
+  .giveColor:hover {
+    /* background-image: linear-gradient(to bottom, hsl(318, 100%, 50%), hsl(327, 81%, 37%)); */
+    /* FOR PURPLE HEADER */
+    background-image: linear-gradient(
+      to bottom,
+      rgb(29, 236, 243),
+      rgb(25, 175, 185)
+    );
+  }
+  tr {
+    background-color: #202020;
+    color: white;
+  }
+  tr:nth-child(even) {
+    background-color: #292929;
+  }
+  tr:hover {
+    background-color: #34373d;
+  }
+  
+  /* ================================================================ */
+  /* =============== FALL DOWN ANIMATION============================= */
+  /* ================================================================ */
+  
+  #myNavStyle {
+    animation: head 1s 0s ease-out 1;
+  }
+  
+  @keyframes head {
+    0% {
+      opacity: 0;
+      transform: translate(0%, 100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0% 0%);
+    }
+  }
+  
+  .animationGridLeft {
+    animation: fromLeft 1s 0.5s ease-out 1 backwards;
+  }
+  @keyframes fromLeft {
+    0% {
+      opacity: 0;
+      transform: translate(0%, 100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0% 0%);
+    }
+  }
+  .animationGridRight {
+    animation: fromRight 1s 0.5s ease-out 1 backwards;
+  }
+  @keyframes fromRight {
+    0% {
+      opacity: 0;
+      transform: translate(0%, 100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0% 0%);
+    }
+  }
+  .table {
+    animation: table 1s 0.7s ease-out 1 backwards;
+  }
+  @keyframes table {
+    0% {
+      opacity: 0;
+      transform: translate(0%, 100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0% 0%);
+    }
+  }
+  
+  
+  
