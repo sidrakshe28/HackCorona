@@ -1,0 +1,341 @@
+body {
+    font-family: "sen", sans-serif !important;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  /* ============================================= */
+  /* ====================NAV==================== */
+  /* ============================================= */
+  #myNavStyle {
+    margin: 6px auto;
+    animation: head 2s 0s 1;
+    background-color: #121212;
+    margin-bottom: 10px;
+    border: none;
+  }
+  #brand {
+    margin: 30px 0;
+  }
+  #myNavStyle h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 5vw;
+    letter-spacing: 2px;
+    margin: 8px auto;
+    font-family: "sen", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+  #styleLi {
+    display: flex;
+    padding: 10px 0;
+    font-weight: 700;
+    justify-content: space-around;
+  }
+  #styleLi li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(66, 66, 66);
+    border-radius: 3px;
+    white-space: nowrap;
+    cursor: pointer;
+    box-shadow: 4px 4px #d8d8d8;
+  }
+  #styleLi li :hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff004d;
+    border-radius: 3px;
+    width: 100%;
+    position: relative;
+    top: 4px;
+    left: 4px;
+    box-shadow: none;
+  }
+  i {
+    position: static !important;
+  }
+  #styleLi li a {
+    color: white;
+    text-align: center;
+  }
+  @media(max-width:425px){
+    #styleLi{
+      flex-direction: column;
+      text-align: center;
+    }
+      #redHandImg img{
+        display:none;
+      }
+      #redHandImg h1{
+        display:none;
+      }
+      .bottomLi{
+        text-align: center;
+      } 
+  }
+  @media (min-width: 990px) {
+    #styleLi li a {
+      padding: 6px 80px;
+    }
+  }
+  @keyframes head {
+    0% {
+      opacity: 0;
+      transform: translate(0%, -100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0% 0%);
+    }
+  }
+  
+  /* ============================================= */
+  /* ============  PRECAUTION BAR   ============== */
+  /* ============================================= */
+  
+  #precautionStyle {
+    background-color: #ff004d;
+  }
+  .precautionFlex {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .changeContent {
+    padding: 12px 0px;
+  }
+  .changeContent:after {
+    content: "";
+    /* Enter Precaution Bar Total Duration  */
+    animation: flow 21s infinite linear;
+    font-size: 1.5rem;
+  }
+  
+  /* Enter Your Precautions Here */
+  @keyframes flow {
+    0%,
+    100% {
+      content: "Help out the elderly by bringing them their groceries and other essentials.  ";
+    }
+    10% {
+      content: "Stand Against FAKE News and WhatsApp Forwards! Do NOT ❌ forward a message until you verify the content it contains.  ";
+    }
+    20% {
+      content: "Even the Virus Does not discriminate. Why do you? DO NOT DISCRIMINATE. WE are all Indians!  ";
+    }
+    30% {
+      content: "Plan and calculate your essential needs for the next three weeks and get only what is bare minimum needed.  ";
+    }
+    40% {
+      content: "Our brothers from the north east are just as Indian as you! Help everyone during this crisis ❤️  ";
+    }
+    50% {
+      content: "If you have symptoms and suspect you have coronavirus - reach out to your doctor or call state helplines. 📞 Get help.  ";
+    }
+    60% {
+      content: "Get in touch with your local NGO's and district administration to volunteer for this cause.  ";
+    }
+    70% {
+      content: "Plan ahead! Take a minute and check how much you have at home. Planning ahead let's you buy exactly what you need!  ";
+    }
+    80% {
+      content: "Be considerate : While buying essentials remember : You need to share with 130 crore fellow citizens!  ";
+    }
+    90% {
+      content: "Panic mode : OFF! ❌ ESSENTIALS ARE ON! ✔️  ";
+    }
+  }
+  
+  /* ============================================= */
+  /* ============  HOME BAR   ============== */
+  /* ============================================= */
+  
+  .cage {
+    background-color: rgb(66, 66, 66);
+    margin: 10px 0px;
+    border-radius: 8px;
+  }
+  .infoBox {
+    padding: 20px;
+  }
+  .infoBox h1 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  
+  /* ============================================= */
+  /* ============  HOME CONTENT TITLE  =============== */
+  /* ============================================= */
+  
+  #headTitle p {
+    font-size: 4vh;
+    font-weight: 800;
+    text-align: center;
+  }
+  #headTitle li {
+    display: flex;
+    align-items: center;
+  }
+  #headTitle button {
+    border-radius: 5%;
+    padding: 8px 10px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    margin-left: 20px;
+    background-color: #ff004d;
+    border: none;
+    line-height: 0.9;
+  }
+  #headTitle button a,
+  #headTitle button a:visited {
+    color: white;
+  }
+  #myGovFlex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  /* ============================================= */
+  /* ============  INFO CORONA  =============== */
+  /* ============================================= */
+  
+  .giveMargin {
+    border: 1px solid #121212;
+  }
+  .whiteBottom {
+    border-bottom: 1px solid white;
+    margin: 0px auto 5px auto;
+  }
+  
+  /* ============================================= */
+  /* ============ FOUR INFO BAR  =============== */
+  /* ============================================= */
+  
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .Overview,
+    .Symptoms,
+    .Prevention,
+    .Treatments {
+      height: 510px;
+    }
+  }
+  
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .Overview,
+    .Symptoms,
+    .Prevention,
+    .Treatments {
+      height: 720px;
+    }
+  }
+  /* // Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .Overview,
+    .Symptoms,
+    .Prevention,
+    .Treatments {
+      height: 620px;
+    }
+  }
+  
+  /* ============================================= */
+  /* ============ IMG CONTENT HERE  =============== */
+  /* ============================================= */
+  
+  .imgFlexing {
+    display: flex;
+    justify-content: center;
+  }
+  .cageimg {
+    background-color: rgba(250, 250, 250, 0.808);
+    margin: 10px 0px;
+    border-radius: 8px;
+  }
+  .autoImg img {
+    height: auto;
+    width: 100%;
+    margin: 0px;
+  }
+  .autoImg h1 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px;
+    padding: 14px 0px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+  }
+  .boxTextColor :nth-child(1) {
+    color: #fa7c01;
+  }
+  .boxTextColor :nth-child(3) {
+    color: #5e8e12;
+  }
+  .defineImgBoxLeft {
+    margin-left: 10px;
+  }
+  .defineImgBoxRight {
+    margin-right: 10px;
+  }
+  .defineImgBoxRight,
+  .defineImgBoxLeft {
+    width: 560px;
+  }
+  @media (max-width: 768px) {
+    .imgFlexing {
+      display: block;
+    }
+    .defineImgBoxRight,
+    .defineImgBoxLeft {
+      margin: auto;
+      width: 100%;
+    }
+  }
+  
+  /* ============================================= */
+  /* ============ RED HAND BOTTOM  =============== */
+  /* ============================================= */
+  
+  .texter {
+    text-align: center;
+  }
+  #infoBox {
+    display: flex;
+    justify-content: space-around;
+  }
+  #redHandImg {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  #redHandImg h1 {
+    font-size: 4vw;
+  }
+  #redHandImg img {
+    margin-right: 10px;
+    width: 100px;
+  }
+  .bottomLi h3 {
+    font-weight: 800;
+    font-size: 30px;
+  }
+  .bottomLi li {
+    list-style: none;
+  }
+  .bottomLi li span {
+    color: red;
+    font-size: 26px;
+    font-weight: 900;
+  }
+  .bottomLi li p {
+    font-size: 26px;
+    display: inline;
+  }
+  
