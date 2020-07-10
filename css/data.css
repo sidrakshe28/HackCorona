@@ -1,0 +1,78 @@
+body {
+    background-color: #121212 !important;
+    color: white;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: "Gotu", sans-serif;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .title{
+    font-size: 30px!important;
+  }
+  .est span span{
+    font-size: 24px!important;
+  }
+  
+  /* ScrollBar */
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0000001f;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7f8197;
+  }
+  
+  .small {
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 25px;
+    margin: 20px;
+    text-align: center;
+  }
+  .tablecontent {
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #202020;
+  }
+  .est {
+    font-size: 18px;
+  }
+  .tablecontent:hover {
+    background-color: black;
+  }
+  
+  #myChart {
+    background-color: #202020;
+    padding: 60px;
+    color: green;
+    cursor: pointer;
+  }
+  
+  /* Responseive queries */
+  @media (max-width: 990px) {
+    canvas {
+      margin-top: 60px;
+    }
+  }
+  
